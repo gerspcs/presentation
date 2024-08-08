@@ -9,3 +9,4 @@ reveal.js is an open source HTML presentation framework. It enables anyone with 
 The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/>
 
 ---
+How to set this up - see [here](https://dbafromthecold.com/2021/02/21/creating-presentations-with-reveal-and-github-pages/)
