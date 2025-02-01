@@ -1,130 +1,483 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>a presentation space using reveal.js</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab created origional demo files which has been modofoed by me">
-
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Commodity hell</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
 
-		<!-- Theme used for syntax highlighting of code -->
+		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
-
 	<body>
+	    <div class="reveal">
+            <div class="slides">
+                 <section>  
+                    <h4>Why-How-What-Who-Where-When</h4>
+                    <p>
+                        <small>Reaching something by design or default</small>
+                    </p>      			
+                </section>
+  	        <section>
+                    <h4>All (IT) strategies are a variation of</h4>
+                    <p>
+                    <ul><small>
+                        <li>Call to action - essence of any IT strategy is delivered by people through process and technology </li>
+			<li>People - an organisation can only move as fast as its capabilities - Agile, ReOrg, Rightsize, Target Operating Model, RACI stuff</li>
+			<li>Process - the ways to be efficient and effective are to simplify, standardise, centralise and automate - ITIL, CI/CD, DevSecOps, GitOps, IaaS, Platform, FinOPs stuff</li>
+			<li>Technology - combine different types of technology to create a compeling user experience - Legacy, Cloud, CORPS, AI and API stuff</li>
+			<li>Totally miss communicating the valour - worth - purpose - WHY to the customer and WHAT time and effort needs to be spent on learning, implementing and maintaining new stuff by the actual people already maintaining HOW live production systems remain up, resilient, secure and delivering a service that customers consider as valuable or of worth to them.</li>
+                    </small>
+                    </ul><p><small>Being "tehie" minded we jump into the data and find that.......</small> </p>
+                    </p>
+                </section>
 
-		<div class="reveal">
+                <section data-background-transition="slide" data-background="https://cdn.mos.cms.futurecdn.net/p93nfisEnJqkRkh8878JRE-970-80.jpg" data-background-size="700px" data-background-repeat="repeat" data-background-color="#111">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+                   <p>
+                   <div class="r-hstack justify-center">
+                   <small style="color:black">“All the evidence shows that God was actually quite a gambler, and the universe is a great casino, where dice are thrown, and roulette wheels spin on every occasion." ― Stephen Hawking </small>
+                   </div>
+                   </p>
+                   <p></p>
+                   <p>
+                   <div class="r-hstack justify-center">
+		   <small style="color:black">“What I see in Nature is a magnificent structure that we can comprehend only very imperfectly, and that must fill a thinking person with a feeling of humility. This is a genuinely religious feeling that has nothing to do with mysticism.” ― Albert Einstein </small> 
+                   </div>
+                   </p>
+                                   
+	        </section>
+                <section>
+                    <h5>Life is what happens to you while you're busy making other plans</h5>
+                   <small>"c'est la vie"</small>
+                    <div id="histo13"></div>    
+                    <script>
+                        var gal = document.getElementById('histo13');
+                        for(var i = 0; i < 4; i++) 
+                            gal.innerHTML += '<div data-id="box_leex'+i+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 2000px; height: 3px; margin: 10px; left:-300px; bottom:'+(i*100-700)+'px;"></div>';
+                        for(var i = 0; i < 4; i++) 
+                            gal.innerHTML += '<div data-id="box_leey'+i+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 3px; height: 1000px; margin: 10px; left:'+(i*100-0)+'px; bottom:'+(-800)+'px;"></div>';
+                        var vara;
+                        var varb;
+                        var varc;
+                        var color;
+                        for(var i = 0; i < 6; i++) {
+                            for (var j = 0; j < 6; j++ ){
+                                vara = 50*Math.random();
+                                varb = 50*Math.random();
+                                varc = 50*Math.random();
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						Bio details here - if you want
-					</p>
-				</section>
-                                <section>
-                                        <h2>Take a Moment</h2>
-                                        <p>
-                                                Press B or . on your keyboard to pause the presentation. 
-                                                This is helpful when you're on stage and want to take distracting slides off the screen.
-                                                If you don't have a keyboard - take the non existent apology and move on.....
-                                        </p>
-                                </section>
+                                if(vara+varb+varc > 120){
+                                    color = 'red';
+                                    gal.innerHTML += '<div data-id="box_value'+i+'_'+j+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 100px; height: 2px; margin: 10px; left:'+(j*100)+'px; bottom:'+(i*100-700+40)+'px;"></div>';
+                                }
+                                else{
+                                    color = 'white';
+                                    gal.innerHTML += '<div data-id="box_value'+i+'_'+j+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 100px; height: 1px; margin: 10px; left:'+(j*100)+'px; bottom:'+(i*100-700+40)+'px;"></div>';
+                                }
+                                gal.innerHTML += '<div data-id="box_lee'+i+'_'+j+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 10px; height: ' + vara +'px; margin: 10px; left:'+(j*100-0+30)+'px; bottom:'+(i*100-700)+'px;"></div>';
+                                gal.innerHTML += '<div data-id="box_leea'+i+'_'+j+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 10px; height: '+varb+'px; margin: 10px; left:'+(j*100-0+15+30)+'px; bottom:'+(i*100-700)+'px;"></div>';
+                                gal.innerHTML += '<div data-id="box_leeb'+i+''+j+'" data-auto-animate-delay="0" style="background: '+color+'; position: absolute; width: 10px; height: '+ varc +'px; margin: 10px; left:'+(j*100-0+30+30)+'px; bottom:'+(i*100-700)+'px;"></div>';
+                            }
+                        }
+                        
+                        
+                    </script>
+                </section>
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <h4>Make the subjective, objective</h4>
+                   <div id='histo2'>
+                        <script>
+                            var gal = document.getElementById('histo2');
+                            for(var i = 0; i < 100; i++) {
+                                // var value = 100 +100*Math.random() ;
+                                var baseline = 50 +100*Math.random();
+                                var gaussian = 100*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var value = baseline +  gaussian;
+                                var redd = (255 - gaussian);
+                                gal.innerHTML += '<div data-id="box'+i+'" data-auto-animate-delay="'+i/40+'" style="background: rgb(255,'+ redd +','+redd+') ;position: absolute; width: 15px; height: '+value+'px; margin: 10px; left:'+i*10+'px; bottom:-500px;"></div>';
+                            };
+                        </script>
+                        <div data-id="box" data-auto-animate-delay="0" style="background: black; position: absolute; width: 1050px; height: 3px; margin: 10px; left:0px; bottom:-502px;"></div>
 
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<h2>Auto-Animate</h2>
-					<p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
-					<div class="r-hstack justify-center">
-						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-					</div>
-				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<div class="r-hstack justify-center">
-						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
-						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
-						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
-					</div>
-					<h2 style="margin-top: 20px;">Auto-Animate</h2>
-				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<div class="r-stack">
-						<div data-id="box1" style="background: cyan; width: 300px; height: 300px;"></div>
-						<div data-id="box2" style="background: magenta; width: 200px; height: 200px;"></div>
-						<div data-id="box3" style="background: yellow; width: 100px; height: 100px;"></div>
-					</div>
-					<h2 style="margin-top: 20px;">Auto-Animate</h2>
-				</section>
+                    </div>
+                    <div data-id="boxlike" data-auto-animate-delay="0" style="background: red; position: absolute; width: 1000px; height: 10px; margin: 10px; left:0px; bottom:0px;"></div>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown Support
+                    <div id='histo182'></div>
+                    <script>
+                        var newone = document.getElementById('histo182');
+                        var old = document.getElementById('histo4');
+                        newone.innerHTML = old.innerHTML;
+                    </script>
+                    <div id='histo18'>
+                        <script>
+                            var gal = document.getElementById('histo18');
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+                            for(var i = 0; i < 100; i++) {
+                                // var value = 100 +100*Math.random() ;
+                                var baseline_no_noise = 50;
+                                var baseline = baseline_no_noise +100*Math.random();
+                                var gaussian_blue = 150*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var gaussian_red = 100*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var fit_red = baseline_no_noise + gaussian_red +25+10 - 500 ;
+                                var fit_blue = baseline_no_noise + gaussian_blue +25+10 - 500 ;
 
-						```html []
-						<section data-markdown>
-						  ## Markdown Support
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: blue ;position: absolute; width: 15px; height: 10px; margin: 10px; left:'+i*10+'px; bottom: '+(fit_blue)+'px ;"></div>';
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: red ;position: absolute; width: 10px; height: 10px; margin: 10px; left:'+i*10+'px; bottom: '+(fit_red)+'px ;"></div>';
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [docs](https://revealjs.com/markdown/).
-						</section>
-						```
-					</script>
-				</section>
-				<section data-background-iframe="https://axa.com" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Iframe Backgrounds</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
-					</div>
-				</section>
-                                <section>
-                                        <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-                                                <h2>... OMG!</h2>
-                                        </section>
-                                </section>
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-				</section>
 
-			</div>
+                            };
+                        </script>
+                        <div data-id="box" data-auto-animate-delay="0" style="background: black; position: absolute; width: 1050px; height: 3px; margin: 10px; left:0px; bottom:-502px;"></div>
+                    </div>
 
+                    <div id="histo18_t0">
+
+                        <script>
+                            var gal = document.getElementById('histo18_t0');
+
+                            for(var i = 0; i < 80; i++) {
+
+                                var value = 100*Math.pow((i-40)/30,2);
+
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: white ;position: absolute; width: 5px; height: 5px; margin: 10px; left:'+(70+i*3)+'px; bottom: '+(value- 300)+'px ;"></div>';
+                            };
+                        </script>
+                        <div data-id="box_t0x" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 3px; margin: 10px; left:0px; bottom:-300px;"></div>
+                        <div data-id="box_t0y" data-auto-animate-delay="0" style="background: white; position: absolute; width: 3px; height: 250px; margin: 10px; left:50px; bottom:-320px;"></div>
+                        <div data-id="box_t0obs" data-auto-animate-delay="2" style="background: blue; position: absolute; width: 3px; height: 200px; margin: 10px; left:280px; bottom:-300px;"></div>
+
+                    </div>
+   			<p class="fragment">
+                        <div data-id="box_unc" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 1px; margin: 10px; left:50px; bottom:-200px;"></div>
+                        <p style="position: absolute;left:20px; bottom:-250px">
+                            <small>1 </small></p>
+                    </p>
+                </section>                
+                <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <h4>Make the subjective, objective</h4>
+                  <div id='histo5'>
+                        <script>
+                            var gal = document.getElementById('histo5');
+                            for(var i = 0; i < 100; i++) {
+                                // var value = 100 +100*Math.random() ;
+                                var baseline = 50 +100*Math.random();
+                                var gaussian = 100*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var value = baseline +  gaussian;
+                                var redd = (255 - gaussian);
+                                gal.innerHTML += '<div data-id="box'+i+'" data-auto-animate-delay="'+i/40+'" style="background: rgb(255,255,255) ;position: absolute; width: 15px; height: '+value+'px; margin: 10px; left:'+i*10+'px; bottom:-500px;"></div>';
+                            };
+                        </script>
+                        <div data-id="box" data-auto-animate-delay="0" style="background: black; position: absolute; width: 1050px; height: 3px; margin: 10px; left:0px; bottom:-502px;"></div>
+
+                    </div>
+                    <div data-id="boxlike" data-auto-animate-delay="0" style="background: red; position: absolute; width: 1000px; height: 10px; margin: 10px; left:0px; bottom:0px;"></div>
+
+                    <div id='histo192'></div>
+                    <script>
+                        var newone = document.getElementById('histo192');
+                        var old = document.getElementById('histo4');
+                        newone.innerHTML = old.innerHTML;
+
+                    </script>
+                    <div id='histo19'>
+                        <script>
+                            var gal = document.getElementById('histo19');
+
+                            for(var i = 0; i < 100; i++) {
+                                // var value = 100 +100*Math.random() ;
+                                var baseline_no_noise = 50;
+                                var baseline = baseline_no_noise +100*Math.random();
+                                var gaussian_blue = 99*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var gaussian_red = 100*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var fit_red = baseline_no_noise + gaussian_red +25+10 - 500 ;
+                                var fit_blue = baseline_no_noise + gaussian_blue +25+10 - 500 ;
+
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: blue ;position: absolute; width: 15px; height: 10px; margin: 10px; left:'+i*10+'px; bottom: '+(fit_blue)+'px ;"></div>';
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: red ;position: absolute; width: 10px; height: 10px; margin: 10px; left:'+i*10+'px; bottom: '+(fit_red)+'px ;"></div>';
+
+
+                            };
+                        </script>
+                        <div data-id="box" data-auto-animate-delay="0" style="background: black; position: absolute; width: 1050px; height: 3px; margin: 10px; left:0px; bottom:-502px;"></div>
+                    </div>
+
+                    <div id="histo19_t0">
+
+                        <script>
+                            var gal = document.getElementById('histo19_t0');
+
+                            for(var i = 0; i < 80; i++) {
+
+                                var value = 100*Math.pow((i-40)/30,2);
+
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: white ;position: absolute; width: 5px; height: 5px; margin: 10px; left:'+(70+i*3)+'px; bottom: '+(value- 300)+'px ;"></div>';
+                            };
+                        </script>
+                        <div data-id="box_t0x" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 3px; margin: 10px; left:0px; bottom:-300px;"></div>
+                        <div data-id="box_t0y" data-auto-animate-delay="0" style="background: white; position: absolute; width: 3px; height: 250px; margin: 10px; left:50px; bottom:-320px;"></div>
+                        <div data-id="box_t0obs" data-auto-animate-delay="2" style="background: blue; position: absolute; width: 3px; height: 200px; margin: 10px; left:200px; bottom:-300px;"></div>
+
+
+                    </div>
+                    <p class="fragment">
+                        <div data-id="box_unc" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 1px; margin: 10px; left:50px; bottom:-200px;"></div>
+                        <p style="position: absolute;left:20px; bottom:-250px">
+                            <small>1 </small></p>
+                    </p>
+                </section>
+
+   <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <h4>Managing to a bell curve</h4>
+		 <ul>
+                    <small>
+                        <li>Great for managing process and Technology CORPS</li>
+                        <li>Not so great for people and kills innovation,creativity,cohesion,basically trust</li>
+                   </small>
+                   </ul>
+
+                    <div data-id="boxlike" data-auto-animate-delay="0" style="background: red; position: absolute; width: 1000px; height: 10px; margin: 10px; left:0px; bottom:0px;"></div>
+
+                    <div id='histo1921'></div>
+                    <script>
+                        var newone = document.getElementById('histo1921');
+                        var old = document.getElementById('histo4');
+                        newone.innerHTML = old.innerHTML;
+
+                    </script>
+                    <div id='histo191'>
+                        <script>
+                            var gal = document.getElementById('histo191');
+
+                            for(var i = 0; i < 100; i++) {
+                                // var value = 100 +100*Math.random() ;
+                                var baseline_no_noise = 50;
+                                var baseline = baseline_no_noise +100*Math.random();
+                                var gaussian_blue = 99*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var gaussian_red = 100*Math.pow(Math.E, (-1*Math.pow(i-70, 2))/(2*10*10)); 
+                                var fit_red = baseline_no_noise +25+10 - 500 ;
+                                var fit_blue = baseline_no_noise +25+10 - 500 ;
+
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: red ;position: absolute; width: 10px; height: 10px; margin: 10px; left:'+i*10+'px; bottom: '+(fit_red)+'px ;"></div>';
+
+
+                            };
+                        </script>
+                        <div data-id="box" data-auto-animate-delay="0" style="background: black; position: absolute; width: 1050px; height: 3px; margin: 10px; left:0px; bottom:-502px;"></div>
+                    </div>
+
+                    <div id="histo191_t0">
+
+                        <script>
+                            var gal = document.getElementById('histo191_t0');
+
+                            for(var i = 0; i < 80; i++) {
+
+                                var value = (100*Math.pow((i-40)/30,2))*-1;
+
+                                gal.innerHTML += '<div data-id="boxfit'+i+'" data-auto-animate-delay="'+i/40+'" style="background: white ;position: absolute; width: 5px; height: 5px; margin: 10px; left:'+(70+i*3)+'px; bottom: '+(value-120)+'px ;"></div>';
+                            };
+                        </script>
+                        <div data-id="box_t0x" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 3px; margin: 10px; left:0px; bottom:-300px;"></div>
+                        <div data-id="box_t0y" data-auto-animate-delay="0" style="background: white; position: absolute; width: 3px; height: 250px; margin: 10px; left:50px; bottom:-320px;"></div>
+                        <div data-id="box_t0obs" data-auto-animate-delay="2" style="background: blue; position: absolute; width: 3px; height: 200px; margin: 10px; left:200px; bottom:-300px;"></div>
+
+
+                    </div>
+                    <p class="fragment">
+                        <div data-id="box_unc" data-auto-animate-delay="0" style="background: white; position: absolute; width: 300px; height: 1px; margin: 10px; left:50px; bottom:-200px;"></div>
+                        <p style="position: absolute;left:20px; bottom:-250px">
+                            <small>1 </small></p>
+                    </p>
+
+		    <ul>                    
+                </section>
+                
+                <section>
+		<div class="r-hstack justify-center">
+		<pr><h4>Rationalisation is a defense mechanism in which people justify difficult or unacceptable feelings with seemingly logical reasons and explanations</h4></pr>
 		</div>
+                </section>
+  
 
+                <section>
+                    <h4>Making the objective,</h4><small>(a rationalisation process to "why?": 1+1=? )</small><h4>subjective</h4>
+                    <ul><small>
+                        <li>Turnover - eNPS - ADC - Bellcurves - tell me how you measure me and I'll tell how I behave</li>
+                        <li>Cynefin - feels like chaos all the time!</li>
+			<li>A hammer is being used to "fix" everything, even stuff that does not need fixing</li>
+                        <li>We're not beancounters, we (well, most of us) were creatives once, now we're widgets</li>
+                        <li>How inspired do you think the beancounting widgets are?</li>
+			<li>What's the opposite of intrinsically motivated - look it up! 1 out of 3 (at best)</li>
+                        <li>Cheap,Fun,Simple - 1 out of 3 (at best)</li>
+                    </small>
+                    </ul><p><small>It's Alright, Ma (I'm Only Bleeding) Song by Bob Dylan </small> </p>
+                </section>
+
+		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+		<small>Always be in a state of becoming :-)</small>
+		<small>By design</small>
+		<div class="r-stack">
+		<div data-id="box1" style="background: cyan;width: 300px;height: 300px;border-radius: 200px;"></div>
+		<div data-id="box2" style="background: magenta;width: 200px;height: 200px;border-radius: 200px;"></div>
+		<div data-id="box3" style="background: yellow;width: 100px;height: 100px;border-radius: 200px;"></div>
+		</div>
+		<h2 style="margin-top: 20px"</h2>
+		</section>
+
+		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+		<small>Always be in a state of becoming :-)</small>
+		<small>By design</small>
+		<div class="r-hstack justify-center">
+		<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px"></div>
+		<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px"></div>
+		<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px"></div>
+		</div>
+		</section>
+
+		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+		<small>Always be in a state of becoming :-)</small>
+		<small>By design </small>
+		<div class="r-stack">
+		<div data-id="box1" style="background: cyan; width: 300px; height: 300px;"></div>
+		<div data-id="box2" style="background: magenta; width: 200px; height: 200px;"></div>
+		<div data-id="box3" style="background: yellow; width: 100px; height: 100px;"></div>
+		</div>
+		</section>
+
+		<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+		<small>Always be in a state of beginning or worse, WTF!! :-(</small>
+		<small>By default</small>
+		<a href="https://revealjs.com/auto-animate/"></a></p>
+		<div class="r-hstack justify-center">
+		<div data-id="box1" style="background: #999;width: 50px;height: 50px;margin: 10px;border-radius: 5px;"></div>
+		<div data-id="box2" style="background: #999;width: 50px;height: 50px;margin: 10px;border-radius: 5px;"></div>
+		<div data-id="box3" style="background: #999;width: 50px;height: 50px;margin: 10px;border-radius: 5px;"></div>
+		</div>
+		</section>
+
+                <section>
+                    <h4>Conclusions</h4>
+                    <ul><small>
+			<li>Think about this, hopefully you have some (conclusions - you know, you know!)</li>
+                        <li>By design is better than by default</li>
+                        <li>State of always becoming is better than always beginning</li>
+                        <li>It is a hard discipline to maintain unit cohesion</li>
+                        <li>"All in" or "All out" of ........(you choose!) </li>
+                        <li>Start with WHY rather than HOW (much), WHEN and WHAT</li>
+                    </small>
+                    </ul><p><small>Going to work each day with a purpose, is just so much more.</small> </p>
+                </section>
+              
+	          </div>
+		</div>
 		<script src="dist/reveal.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
 		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/search/search.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: true,
+                center: true,
+                mathjax2: {
+                    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    tex2jax: {
+                    inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ] ],
+                    skipTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+                    }
+                },
+				// Learn about plugins: https://revealjs.com/plugins/
+                // plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
+			});
+
+		</script>
 		<script>
 
-			// Also available as an ES module, see:
-			// https://revealjs.com/initialization/
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
+			let deck1 = new Reveal( document.querySelector( '.deck1' ), {
+				embedded: true,
+				progress: false,
+				keyboardCondition: 'focused',
+				plugins: [ RevealHighlight ]
+			} );
+			deck1.on( 'slidechanged', () => {
+				console.log( 'Deck 1 slide changed' );
+			} );
+			deck1.initialize();
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
-			});
+			let deck2 = new Reveal( document.querySelector( '.deck2' ), {
+				embedded: true,
+				progress: false,
+				keyboardCondition: 'focused',
+				plugins: [ RevealMarkdown, RevealMath ]
+			} );
+			deck2.initialize().then( () => {
+				deck2.slide(1);
+			} );
+			deck2.on( 'slidechanged', () => {
+				console.log( 'Deck 2 slide changed' );
+			} );
+
 		</script>
 	</body>
+
+<!-- footer -->
+<style type="text/css">
+    /* 1. Style header/footer <div> so they are positioned as desired. */
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+</style>
+
+<!-- 2. Create hidden header/footer <div> -->
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <!-- <div id="header-left">HEADER-LEFT</div> -->
+        <!-- <div id="header-right">HEADER-RIGHT</div> -->
+        <div id="footer-left" style="background: rgb(0, 26, 77); width: 2050px; height: 30px">
+         
+        </div>
+        <div id="header-right" style="background: rgb(0, 26, 77); width: 2050px; height: 10px"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
+
 </html>
+
