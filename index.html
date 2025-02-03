@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 	<head>
@@ -392,5 +391,32 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
         <script src="plugin/zoom/zoom.js"></script>
-        <script src="plugin/math/math.js"></
+        <script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: true,
+                center: true,
+                mathjax2: {
+                    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    tex2jax: {
+                    inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ] ],
+                    skipTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+                    }
+                },
+				// Learn about plugins: https://revealjs.com/plugins/
+                // plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
+			});
+
+		</script>
+	</script>
+	</body>
+</html>
+
 
