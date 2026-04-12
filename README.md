@@ -10,3 +10,5 @@ The framework comes with a powerful feature set including [nested slides](https:
 
 ---
 How to set this up - see [here](https://dbafromthecold.com/2021/02/21/creating-presentations-with-reveal-and-github-pages/)
+
+The actual presnetation - see {here}https://gerspcs.github.io/presentation/
